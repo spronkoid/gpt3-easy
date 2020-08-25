@@ -1,4 +1,4 @@
-# GPT3-simple
+# GPT3 put simply
 ---
 
 Just a few lines of code that should help you with interacting with the GPT3 model (in python, javascript version soon maybe?) <br>
