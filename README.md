@@ -47,3 +47,11 @@ query (required) - A string to search for within the data
 relative_file_location (optional) the folder in which all texts are stored to be searched through
 extend (optional) - how many lines after the one stated should be required (default 3) usually helps with context if what you've searched for is the Title of a document
 ```
+### Other Documentation:
+
+`gpt3.auth ` is for authenticating your instance of GPT3, it's used here (where `sk-yourkeygoeshere` should be replaced with your key:
+```python
+gpt3.auth('sk-yourkeygoeshere')
+``` 
+---
+Follow me on Twitter [@spronkoid](https://twitter.com/spronkoid)
