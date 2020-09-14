@@ -89,3 +89,36 @@ def complete(prompt, engine="davinci", max_tokens=128, temperature=1, stop=None,
         presence_penalty=presence_penalty,
     )
     return data2["choices"][0]["text"]
+
+def translate(text, language):
+    return complete("""
+    
+'I want a hamburger'
+French: Je veux un hamburger
+
+'Where is the restroom?'
+German: wo ist die Toilette
+
+'Hello'
+Greek: Χαίρετε
+
+'"""+"'"+text+"'\n"+language+":", max_tokens=30, temperature=0.7, stop="'", engine='davinci')
+
+def summarize(text, target_audience):
+    return complete("""
+My second grader asked me what this passage means:
+
+"
+Overnight trading for the NYSE Index futures was a bit volatile, 
+dropping by about 3% to the downside before moving sharply back to the upside. 
+Gold futures were unchanged and the E-mini NASDAQ 100 futures remained near 
+unchanged. The yield on the 10-year Treasury bond finished unchanged from its 
+close of 2.45% earlier today.
+"
+I rephrased it for him, in plain language a second grader can understand:
+"
+The stock market dropped by a lot, then went back up.
+"
+
+My """ + target_audience + "asked me what this means:\n"+'"\n'+text+'"\n' + """
+I rephrased it for them, in language a """+target_audience+' can understand\n"', temperature=0.75, stop='"', max_tokens=128)
