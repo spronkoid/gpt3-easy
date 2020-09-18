@@ -54,4 +54,6 @@ extend (optional) - how many lines after the one stated should be required (defa
 gpt3.auth('sk-yourkeygoeshere')
 ``` 
 ---
+(edit) I've also added `translate(text, language)` and `summarize(text, target_audience)` where strings are the values provided, for example the `target_audience` could be `"third grader"`
+
 Follow me on Twitter [@spronkoid](https://twitter.com/spronkoid)
