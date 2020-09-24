@@ -1,6 +1,6 @@
 # GPT3 put simply
 ---
-(edit: I didn't actually know they were monatizing it so I won't be able to update this if it changes, I'm from a very poor background and would never in my whole life be able to pay 100 dollars per month for this)
+(edit: I didn't actually know they were monatizing it so I won't be able to update this if it changes, I'm from a very poor background and would never in my whole life be able to pay 100 dollars per month for this) <br>
 Just a few lines of code that should help you with interacting with the GPT3 model (in python, javascript version soon maybe?) <br>
 Examples of usage:
 
